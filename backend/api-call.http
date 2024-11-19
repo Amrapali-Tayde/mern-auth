@@ -1,0 +1,38 @@
+GET http://localhost:5005
+
+
+###
+POST http://localhost:5005/api/user
+Content-Type: application/json
+
+{
+  "name": "amrapali Tayde",
+  "email": "amrapali@email.com",
+  "password": "3456"
+}
+
+
+###
+POST http://localhost:5005/api/user/authUser
+Content-Type: application/json
+
+{
+  "email": "amrapalit@email.com",
+  "password": "3456"
+}
+
+###
+POST http://localhost:5005/api/user/logout
+
+
+###
+GET http://localhost:5005/api/user/profile
+
+
+###
+PUT http://localhost:5005/api/user/profile
+Content-Type: application/json
+
+{
+  "email": "amrapalit@email.com"
+}
